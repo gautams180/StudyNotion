@@ -132,7 +132,7 @@ module.exports = {
       boxShadow: {
         'inner' : "inset -2px -2px 0px",
         'blue' : "-5px -20px 50px",
-        'white' : "20px 20px"
+        // 'white' : "20px 20px"
       }
     },
   },

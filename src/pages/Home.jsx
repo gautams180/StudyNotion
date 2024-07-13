@@ -7,17 +7,19 @@ import Banner from "../assets/Images/banner.mp4"
 import CodeBlocks from '../components/core/HomePage/CodeBlocks';
 import TimelineSection from '../components/core/HomePage/TimelineSection';
 import LearningLanguageSection from '../components/core/HomePage/LearningLanguageSection';
+import InstructorSection from '../components/core/HomePage/InstructorSection';
+import ExploreMore from '../components/core/HomePage/ExploreMore';
 
 const Home = () => {
   return (
     <div>
 
         {/* Section 1*/}
-        <div className='relative mx-auto flex flex-col w-11/12 max-w-maxContent items-center text-white justify-between'>
+        <div className='relative mx-auto flex flex-col w-11/12 max-w-maxContent items-center text-white justify-between'> 
 
             <Link to={"/signup"}>
 
-                <div className='group mt-16 p-1 mx-auto rounded-full bg-richblack-800 font-bold text-richblack-200 transition-all duration-200 hover:scale-95 w-fit'>
+                <div className='group mt-16 p-1 mx-auto rounded-full bg-richblack-800 font-bold text-richblack-200 transition-all duration-200 hover:scale-95 w-fit shadow-white shadow-sm'>
                     <div className='flex flex-row items-center gap-2 rounded-full px-10 py-[5px] transition-all duration-200 group-hover:bg-richblack-900'>
                         <p>Become an Instructor</p>
                         <FaArrowRight />
@@ -45,7 +47,7 @@ const Home = () => {
                 </CTAButton>
             </div>
 
-            <div className='mx-3 my-12 shadow-white relative z-0'>
+            <div className='mx-3 my-12 shadow-white shadow-[20px_20px] relative z-0'>
                 <div className='absolute -z-10 w-[90%] min-h-[400px] left-3 top-20 shadow-[20px_-50px_80px_] shadow-blue-50 rounded-full'></div>
                 <video
                 muted
@@ -121,6 +123,8 @@ const Home = () => {
                 />
             </div>
 
+            <ExploreMore />
+
         </div>
 
         {/* Section 2*/}
@@ -179,6 +183,15 @@ const Home = () => {
         </div>
 
         {/* Section 3*/}
+        <div className='w-11/12 mx-auto max-w-maxContent flex flex-col items-center justify-between gap-8 bg-richblack-900 text-white'>
+                    
+                <InstructorSection />
+
+                <h2 className='text-center text-4xl font-semibold mt-10 '>Review from other Learners</h2>
+
+                {/* Review Slider */}
+
+        </div>
 
         {/* Footer*/}
     </div>

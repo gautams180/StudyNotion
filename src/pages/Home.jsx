@@ -9,6 +9,7 @@ import TimelineSection from '../components/core/HomePage/TimelineSection';
 import LearningLanguageSection from '../components/core/HomePage/LearningLanguageSection';
 import InstructorSection from '../components/core/HomePage/InstructorSection';
 import ExploreMore from '../components/core/HomePage/ExploreMore';
+import Footer from '../components/common/Footer';
 
 const Home = () => {
   return (
@@ -48,14 +49,15 @@ const Home = () => {
             </div>
 
             <div className='mx-3 my-12 shadow-white shadow-[20px_20px] relative z-0'>
-                <div className='absolute -z-10 w-[90%] min-h-[400px] left-3 top-20 shadow-[20px_-50px_80px_] shadow-blue-50 rounded-full'></div>
-                <video
-                muted
-                loop
-                autoPlay
-                >
-                    <source src={Banner} type='video/mp4' /> 
-                </video>
+                <div className='shadow-[-1px_-1px_30px_] shadow-blue-50 '>
+                    <video
+                    muted
+                    loop
+                    autoPlay
+                    >
+                        <source src={Banner} type='video/mp4' /> 
+                    </video>
+                </div>
             </div>
 
             {/* Code section 1  */}
@@ -194,6 +196,7 @@ const Home = () => {
         </div>
 
         {/* Footer*/}
+        <Footer />
     </div>
   )
 }
